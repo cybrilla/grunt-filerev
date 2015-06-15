@@ -53,6 +53,15 @@ Default: `8`
 
 The number of characters of the file hash to prefix the file name with.
 
+#### options.process
+
+Type: `function`  
+Default: `null`
+Parameters passed to function: `base name of the file`, `name with revision suffixed`, `file extension`
+Expected return type: `string`
+
+A function to process the the revised file name and return back the new file name.
+
 ### Destination
 
 It will overwrite the `src` files if you don't specify a `dest`:
