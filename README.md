@@ -53,14 +53,31 @@ Default: `8`
 
 The number of characters of the file hash to prefix the file name with.
 
-#### options.process
+#### options.process(basename, name, extension)
 
 Type: `function`  
 Default: `null`  
-Parameters passed to function: `base name of the file`, `name with revision suffixed`, `file extension`  
 Expected return type: `string`
 
 A function to process the the revised file name and return back the new file name.
+
+##### basename
+
+Type: `string`
+
+The basename of the file.
+
+##### name
+
+Type: `string`
+
+Name with the revision suffixed.
+
+##### extension
+
+Type: `string`
+
+The file extension.
 
 ### Destination
 
